@@ -68,7 +68,7 @@ describe('express(1)', function () {
         '  "version": "0.0.0",\n' +
         '  "private": true,\n' +
         '  "scripts": {\n' +
-        '    "start": "node ./bin/www"\n' +
+        '    "start": "ts-node ./bin/www"\n' +
         '  },\n' +
         '  "dependencies": {\n' +
         '    "cookie-parser": "~1.4.5",\n' +
@@ -77,6 +77,12 @@ describe('express(1)', function () {
         '    "http-errors": "~1.7.2",\n' +
         '    "jade": "~1.11.0",\n' +
         '    "morgan": "~1.10.0"\n' +
+        '  },\n' +
+        '  "devDependencies": {' +
+        '    "@types/node": "^20.10.5",\n' +
+        '    "@types/express": "^4.17.21",\n' +
+        '    "@types/http-errors": "^2.0.4",\n' +
+        '    "@types/morgan": "^1.9.9"\n' +
         '  }\n' +
         '}\n')
     })
