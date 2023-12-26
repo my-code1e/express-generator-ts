@@ -1,15 +1,15 @@
-
-var assert = require('assert')
-var AppRunner = require('./support/app-runner')
-var exec = require('child_process').exec
-var fs = require('fs')
-var mkdirp = require('mkdirp')
-var path = require('path')
-var request = require('supertest')
-var rimraf = require('rimraf')
-var spawn = require('child_process').spawn
-var utils = require('./support/utils')
-var validateNpmName = require('validate-npm-package-name')
+import assert from 'assert';
+import AppRunner from './support/app-runner';
+import cProcess from "child_process";
+var exec = cProcess.exec;
+import fs from 'fs';
+import mkdirp from 'mkdirp';
+import path from 'path';
+import request from 'supertest'
+import rimraf from 'rimraf';
+var spawn = cProcess.spawn
+import utils from './support/utils';
+import validateNpmName from 'validate-npm-package-name'
 
 var APP_START_STOP_TIMEOUT = 10000
 var PKG_PATH = path.resolve(__dirname, '..', 'package.json')
@@ -1216,7 +1216,7 @@ describe('express(1)', function () {
   })
 })
 
-function npmInstall (dir, callback) {
+function npmInstall(dir, callback) {
   var env = utils.childEnvironment()
 
   exec('npm install', { cwd: dir, env: env, maxBuffer: STDERR_MAX_BUFFER }, function (err, stderr) {
@@ -1230,7 +1230,7 @@ function npmInstall (dir, callback) {
   })
 }
 
-function run (dir, args, callback) {
+function run(dir, args, callback) {
   runRaw(dir, args, function (err, code, stdout, stderr) {
     if (err) {
       return callback(err)
@@ -1249,7 +1249,7 @@ function run (dir, args, callback) {
   })
 }
 
-function runRaw (dir, args, callback) {
+function runRaw(dir, args, callback) {
   var argv = [BIN_PATH].concat(args)
   var binp = process.argv[0]
   var stderr = ''
@@ -1260,23 +1260,23 @@ function runRaw (dir, args, callback) {
   })
 
   child.stdout.setEncoding('utf8')
-  child.stdout.on('data', function ondata (str) {
+  child.stdout.on('data', function ondata(str) {
     stdout += str
   })
   child.stderr.setEncoding('utf8')
-  child.stderr.on('data', function ondata (str) {
+  child.stderr.on('data', function ondata(str) {
     stderr += str
   })
 
   child.on('close', onclose)
   child.on('error', callback)
 
-  function onclose (code) {
+  function onclose(code) {
     callback(null, code, stdout, stderr)
   }
 }
 
-function setupTestEnvironment (name) {
+function setupTestEnvironment(name) {
   var ctx = {}
 
   before('create environment', function (done) {
