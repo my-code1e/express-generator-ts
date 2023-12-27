@@ -95,11 +95,20 @@ function createApplication(name, dir, options, done) {
     version: '0.0.0',
     private: true,
     scripts: {
-      start: 'node ./bin/www'
+      start: 'ts-node ./bin/www.ts'
     },
     dependencies: {
       debug: '~2.6.9',
       express: '~4.17.1'
+      // http-errors": "~1.7.2",
+      // jade": "~1.11.0",
+      // morgan": "~1.10.0"
+    },
+    devDependencies: {
+      '@types/node': '^20.10.5',
+      '@types/express': '^4.17.21',
+      '@types/http-errors': '^2.0.4',
+      '@types/morgan': '^1.9.9'
     }
   }
 
