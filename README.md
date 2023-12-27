@@ -1,6 +1,6 @@
 [![Express Logo](https://i.cloudup.com/zfY6lL7eFa-3000x3000.png)](http://expressjs.com/)
 
-[Express'](https://www.npmjs.com/package/express) application generator.
+[Express'](https://www.npmjs.com/package/express) application generator, but typescript.
 
 [![NPM Version][npm-image]][npm-url]
 [![NPM Downloads][downloads-image]][downloads-url]
@@ -15,7 +15,7 @@ $ npm install -g express-generator-ts
 
 ## Quick Start
 
-The quickest way to get started with express is to utilize the executable `express(1)` to generate an application as shown below:
+The quickest way to get started with express is to utilize the executable `express-ts(1)` to generate an application as shown below:
 
 Create the app:
 
