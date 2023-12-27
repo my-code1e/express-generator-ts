@@ -10,7 +10,7 @@
 ## Installation
 
 ```sh
-$ npm install -g express-generator-ts
+$ npm install -g @yashmitsagari/express-generator-ts
 ```
 
 ## Quick Start
