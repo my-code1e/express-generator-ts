@@ -1,7 +1,7 @@
 {
   "name": "@yashmitsagari/express-generator-w-typescript",
   "description": "Express' application generator, but Typescript!",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "Yashmit Sagari",
   "keywords": [
     "express",
@@ -26,7 +26,7 @@
   "main": "bin/express-cli.js",
   "preferGlobal": true,
   "bin": {
-    "express-typescript": "./bin/express-cli.js"
+    "express-ts": "./bin/express-cli.js"
   },
   "devDependencies": {
     "@types/mocha": "^10.0.6",
