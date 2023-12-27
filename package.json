@@ -1,5 +1,5 @@
 {
-  "name": "@yashmitsagari/express-generator-w-typescript",
+  "name": "express-generator-ts-yashmit",
   "description": "Express' application generator, but Typescript!",
   "version": "1.0.4",
   "author": "Yashmit Sagari",
