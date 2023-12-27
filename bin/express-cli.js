@@ -108,7 +108,8 @@ function createApplication(name, dir, options, done) {
       '@types/node': '^20.10.5',
       '@types/express': '^4.17.21',
       '@types/http-errors': '^2.0.4',
-      '@types/morgan': '^1.9.9'
+      '@types/morgan': '^1.9.9',
+      '@types/cookie-parser': '^1.4.6'
     }
   }
 
