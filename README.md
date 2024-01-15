@@ -1,6 +1,6 @@
 [![Express Logo](https://i.cloudup.com/zfY6lL7eFa-3000x3000.png)](http://expressjs.com/)
 
-[Express'](https://www.npmjs.com/package/express) application generator, but typescript.
+[Express'](https://www.npmjs.com/package/express) application generator, but with typescript.
 
 [![NPM Version][npm-image]][npm-url]
 [![NPM Downloads][downloads-image]][downloads-url]
@@ -10,7 +10,7 @@
 ## Installation
 
 ```sh
-$ npm install -g @yashmitsagari/express-generator-ts
+$ npm install -g express-generator-ts-yashmit
 ```
 
 ## Quick Start
